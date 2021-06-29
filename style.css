@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    margin: 10%;
+}
+.section-content{
+       display: flex;
+}
+.section-content  img{
+    width: 500px;
+    height: 330px;
+    border-radius: 6px;
+    border: 5px solid whitesmoke;
+}
+.section-content .contest-text{
+    margin: 0px;
+    padding: 10px 15px;
+    display: block;
+    width: 450px;
+
+}
+.section-content .contest-text h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+}
+.section-content .contest-text h3{
+    color: black;
+    font-size: 22px;
+    padding-top: 5px;
+    
+}
+.section-content .contest-text h4{
+    font-size: 18px;
+    color: rgb(27, 27, 27);
+    font-weight: 300;
+
+}
+.section-content .contest-text p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(66, 65, 65);
+}
+.section-content .countdown{
+    display: flex;
+    margin:15px 20px;
+}
+.section-content .countdown .deadline-count{
+    margin: 10px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: rgb(29, 46, 77);
+}
+.section-content .countdown .deadline-count h3{
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+.section-content .countdown .deadline-count span{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+@media (max-width:1100px){
+    .section-content{
+        display: block;
+        margin-left: 20%;
+    }
+    .section-content img{
+        height: 250px;
+        width: 450px;
+    }
+}
+@media (max-width:700px){
+    .section-content{
+        margin: 10%;
+        align-items: center;
+        justify-items: center;
+    }
+    .section-content .contest-text{
+        width: 420px;
+    }
+}
+@media (max-width:620px){
+    .section-content{
+        margin: 8% 2%;
+        align-items: center;
+        justify-items: center;
+    }
+    .section-content img{
+        width: 400px;
+        height: 220px;
+    }
+    .section-content .contest-text{
+        width: 420px;
+    }
+    .section-content .countdown{
+        margin: 10px 10px;
+    }
+    .section-content .countdown .deadline-count{
+        padding: 5px 20px;
+        margin: 6px;
+    }
+
+}
+.expire{
+    color: darkred;
+    font-size: 25px;
+}
+
+
+
